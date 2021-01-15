@@ -8,7 +8,7 @@ library(aws.s3)
 
 ###set a regional or broad base of clinics to scrape
 
- base_url <-  'https://cw2-alaska-production.herokuapp.com/clinic/search?location=632+west+6th+avenue%2C+anchorage&search_radius=10000+miles&search_name=&search_date=&vaccine_name=&commit=Search'
+ base_url <-  'https://cw2-alaska-production.herokuapp.com/clinic/search?location=&search_radius=All&search_name=&search_date=&vaccine_name=&commit=Search'
 
  
  ####################################################################
@@ -26,7 +26,7 @@ max_pages <- max(nav_data_num, na.rm = T)
 pages_vector <- 1:max_pages ###need to loop over this.!!
 
 createUrlStrings <- function(page)  {
-   return(paste0(base_url, "&page=",page)) 
+  return(paste0(base_url, "&page=",page, "#search_results")) 
   
 }
 
