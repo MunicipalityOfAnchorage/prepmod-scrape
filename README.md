@@ -1,7 +1,7 @@
 
 # prepmod-scrape
 
-This scrapes COVID-19 vaccination clinics published on the state of Alaska's [Prepmod website](https://cw2-alaska-production.herokuapp.com/clinic/search). The prepmod.R script generates a CSV after parsing the html into an R dataframe. It can further push that cleaned data to Amazon S3. That output is further published to the web as [anchoragecovidvaccine.org/](https://anchoragecovidvaccine.org/) as an interactive HTML table. 
+This scrapes COVID-19 vaccination clinics published on the state of Alaska's [Prepmod website](https://cw2-alaska-production.herokuapp.com/clinic/search). The prepmod.R script generates a CSV after parsing the html into an R dataframe. It can further push that cleaned data to Amazon S3. That output is further published to the web as [anchoragecovidvaccine.org](https://anchoragecovidvaccine.org/) as an interactive HTML table. 
 
 ## Data Source: 
 
